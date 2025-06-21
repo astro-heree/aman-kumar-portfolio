@@ -3,57 +3,54 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
+const roles = [
+  "Web Developer",
+  "Problem Solver", 
+  "Frontend Developer",
+  "Backend Engineer",
+  "Full Stack Developer",
+  "Software Engineer",
+  "AI Enthusiast"
+];
+
 export default function Hero() {
-  const roles = [
-    "Web Developer",
-    "Problem Solver", 
-    "Frontend Developer",
-    "Backend Engineer",
-    "Full Stack Developer",
-    "Software Engineer",
-    "AI Enthusiast"
-  ];
 
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
-  const [isPaused, setIsPaused] = useState(false);
   const [showCursor, setShowCursor] = useState(true);
 
   useEffect(() => {
     const currentRole = roles[currentRoleIndex];
-    
-    if (isPaused) {
-      const pauseTimeout = setTimeout(() => {
-        setIsPaused(false);
-        setIsDeleting(true);
-      }, 2000);
-      return () => clearTimeout(pauseTimeout);
-    }
-    
-    const timeout = setTimeout(() => {
-      if (!isDeleting) {
-        // Typing
-        if (currentText.length < currentRole.length) {
-          setCurrentText(currentRole.substring(0, currentText.length + 1));
-        } else {
-          // Finished typing, pause before deleting
-          setIsPaused(true);
-        }
-      } else {
-        // Deleting
-        if (currentText.length > 0) {
-          setCurrentText(currentText.substring(0, currentText.length - 1));
-        } else {
-          // Finished deleting, move to next role
-          setIsDeleting(false);
-          setCurrentRoleIndex((prev) => (prev + 1) % roles.length);
-        }
-      }
-    }, isDeleting ? 50 : 100);
+    let timeout: NodeJS.Timeout;
 
-    return () => clearTimeout(timeout);
-  }, [currentText, isDeleting, isPaused, currentRoleIndex, roles]);
+    if (!isDeleting && currentText.length < currentRole.length) {
+      // Typing
+      timeout = setTimeout(() => {
+        setCurrentText(currentRole.substring(0, currentText.length + 1));
+      }, 100);
+    } else if (!isDeleting && currentText.length === currentRole.length) {
+      // Pause after typing
+      timeout = setTimeout(() => {
+        setIsDeleting(true);
+      }, 1500);
+    } else if (isDeleting && currentText.length > 0) {
+      // Deleting
+      timeout = setTimeout(() => {
+        setCurrentText(currentText.substring(0, currentText.length - 1));
+      }, 50);
+    } else if (isDeleting && currentText.length === 0) {
+      // Move to next role
+      timeout = setTimeout(() => {
+        setIsDeleting(false);
+        setCurrentRoleIndex((prev) => (prev + 1) % roles.length);
+      }, 500);
+    }
+
+    return () => {
+      if (timeout) clearTimeout(timeout);
+    };
+  }, [currentText, isDeleting, currentRoleIndex]);
 
   // Cursor blinking effect
   useEffect(() => {

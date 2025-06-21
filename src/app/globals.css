@@ -9,8 +9,9 @@
   
   body {
     font-feature-settings: 'rlig' 1, 'calt' 1;
-    background-color: #0f172a;
+    background: linear-gradient(135deg, #0a0e1a 0%, #1a1f2e 25%, #0f172a 50%, #1a1f2e 75%, #0a0e1a 100%);
     color: #e2e8f0;
+    min-height: 100vh;
   }
 }
 
@@ -40,10 +41,94 @@
   }
   
   .dark-card {
-    @apply bg-slate-800/50 backdrop-blur-sm border border-slate-700/50;
+    @apply bg-slate-800/60 backdrop-blur-sm border border-slate-700/50 rounded-2xl;
+    background: linear-gradient(145deg, rgba(30, 41, 59, 0.4), rgba(51, 65, 85, 0.2));
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.3),
+      0 0 0 1px rgba(59, 130, 246, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
   }
   
   .dark-card-hover {
-    @apply hover:bg-slate-800/70 hover:border-slate-600/50;
+    @apply hover:bg-slate-800/70 hover:border-slate-600/50 transition-all duration-300;
+  }
+
+  .section-container {
+    @apply bg-slate-900/60 backdrop-blur-lg rounded-3xl p-12 mx-4 my-8;
+    background: linear-gradient(145deg, rgba(15, 23, 42, 0.7), rgba(30, 41, 59, 0.4));
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    box-shadow: 
+      0 20px 60px rgba(0, 0, 0, 0.4),
+      0 0 40px rgba(59, 130, 246, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1),
+      inset 0 -1px 0 rgba(59, 130, 246, 0.1);
+  }
+
+  .glow-card {
+    @apply bg-slate-800/40 backdrop-blur-md rounded-2xl p-8;
+    background: linear-gradient(145deg, rgba(30, 41, 59, 0.6), rgba(51, 65, 85, 0.3));
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.4),
+      0 0 20px rgba(59, 130, 246, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .glow-card:hover {
+    border-color: rgba(59, 130, 246, 0.4);
+    box-shadow: 
+      0 12px 40px rgba(0, 0, 0, 0.5),
+      0 0 30px rgba(59, 130, 246, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+  }
+
+  .section-card {
+    @apply bg-slate-800/50 backdrop-blur-lg rounded-3xl p-8;
+    background: linear-gradient(145deg, rgba(30, 41, 59, 0.5), rgba(51, 65, 85, 0.2));
+    border: 1px solid rgba(59, 130, 246, 0.15);
+    box-shadow: 
+      0 10px 40px rgba(0, 0, 0, 0.3),
+      0 0 15px rgba(59, 130, 246, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  }
+
+  .skill-card-enhanced {
+    @apply bg-slate-800/40 backdrop-blur-md rounded-2xl p-6;
+    background: linear-gradient(145deg, rgba(30, 41, 59, 0.4), rgba(51, 65, 85, 0.2));
+    border: 1px solid rgba(59, 130, 246, 0.1);
+    box-shadow: 
+      0 6px 25px rgba(0, 0, 0, 0.2),
+      0 0 12px rgba(59, 130, 246, 0.05),
+      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+  }
+
+  .skill-card-enhanced:hover {
+    border-color: rgba(59, 130, 246, 0.3);
+    box-shadow: 
+      0 8px 35px rgba(0, 0, 0, 0.3),
+      0 0 20px rgba(59, 130, 246, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+  }
+
+  .tech-icon-card {
+    @apply rounded-2xl transition-all duration-300;
+    background: linear-gradient(145deg, rgba(51, 65, 85, 0.6), rgba(30, 41, 59, 0.4));
+    border: 1px solid rgba(59, 130, 246, 0.1);
+    box-shadow: 
+      0 4px 15px rgba(0, 0, 0, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .tech-icon-card:hover {
+    border-color: rgba(59, 130, 246, 0.3);
+    box-shadow: 
+      0 6px 25px rgba(0, 0, 0, 0.3),
+      0 0 15px rgba(59, 130, 246, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px) scale(1.05);
   }
 }
