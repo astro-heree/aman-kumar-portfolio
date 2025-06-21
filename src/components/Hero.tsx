@@ -17,10 +17,19 @@ export default function Hero() {
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
   const [showCursor, setShowCursor] = useState(true);
 
   useEffect(() => {
     const currentRole = roles[currentRoleIndex];
+    
+    if (isPaused) {
+      const pauseTimeout = setTimeout(() => {
+        setIsPaused(false);
+        setIsDeleting(true);
+      }, 2000);
+      return () => clearTimeout(pauseTimeout);
+    }
     
     const timeout = setTimeout(() => {
       if (!isDeleting) {
@@ -28,8 +37,8 @@ export default function Hero() {
         if (currentText.length < currentRole.length) {
           setCurrentText(currentRole.substring(0, currentText.length + 1));
         } else {
-          // Finished typing, wait then start deleting
-          setTimeout(() => setIsDeleting(true), 2000);
+          // Finished typing, pause before deleting
+          setIsPaused(true);
         }
       } else {
         // Deleting
@@ -44,7 +53,7 @@ export default function Hero() {
     }, isDeleting ? 50 : 100);
 
     return () => clearTimeout(timeout);
-  }, [currentText, isDeleting, currentRoleIndex, roles]);
+  }, [currentText, isDeleting, isPaused, currentRoleIndex, roles]);
 
   // Cursor blinking effect
   useEffect(() => {
@@ -110,7 +119,7 @@ export default function Hero() {
         {/* Social Icons */}
         <div className="flex justify-center gap-8 mb-20">
           <a 
-            href="https://github.com/amankumar" 
+            href="https://github.com/astro-heree" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-slate-500 hover:text-white transition-colors duration-300 transform hover:scale-110"
@@ -120,7 +129,7 @@ export default function Hero() {
             </svg>
           </a>
           <a 
-            href="https://linkedin.com/in/amankumar" 
+            href="https://www.linkedin.com/in/astro-here" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-slate-500 hover:text-white transition-colors duration-300 transform hover:scale-110"
@@ -130,7 +139,7 @@ export default function Hero() {
             </svg>
           </a>
           <a 
-            href="mailto:amankumar@example.com" 
+            href="mailto:amanastro.work@gmail.com" 
             className="text-slate-500 hover:text-white transition-colors duration-300 transform hover:scale-110"
           >
             <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
