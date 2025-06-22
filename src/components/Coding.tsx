@@ -5,7 +5,21 @@ export default function Coding() {
       url: "https://leetcode.com/u/astro-here",
       color: "hover:bg-orange-600 hover:border-orange-500",
       description: "Algorithm Challenges",
-      stats: "Active Problem Solver"
+      stats: "500+ Problems Solved"
+    },
+    {
+      name: "CodeChef",
+      url: "https://www.codechef.com/users/astro_here",
+      color: "hover:bg-yellow-600 hover:border-yellow-500",
+      description: "Monthly Contests",
+      stats: "300+ Problems Solved"
+    },
+    {
+      name: "GeeksforGeeks",
+      url: "https://www.geeksforgeeks.org/user/astrohere/",
+      color: "hover:bg-green-600 hover:border-green-500",
+      description: "DSA Practice",
+      stats: "200+ Problems Solved"
     },
     {
       name: "Codeforces",
@@ -14,20 +28,6 @@ export default function Coding() {
       description: "Competitive Programming",
       stats: "Contest Participant"
     },
-    {
-      name: "CodeChef",
-      url: "https://www.codechef.com/users/astro-here",
-      color: "hover:bg-yellow-600 hover:border-yellow-500",
-      description: "Monthly Contests",
-      stats: "303+ Problems Solved"
-    },
-    {
-      name: "GeeksforGeeks",
-      url: "https://www.geeksforgeeks.org/user/astrohere/",
-      color: "hover:bg-green-600 hover:border-green-500",
-      description: "DSA Practice",
-      stats: "205+ Problems Solved"
-    }
   ];
 
   const typingPlatforms = [
@@ -46,7 +46,7 @@ export default function Coding() {
   ];
 
   return (
-    <section id="coding" className="py-20 section-padding">
+    <section id="coding" className="py-10 section-padding">
       <div className="container-max">
         <div className="section-container">
           {/* Section Header */}

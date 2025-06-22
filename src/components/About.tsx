@@ -5,7 +5,7 @@ import {
 
 export default function About() {
   return (
-    <section id="about" className="py-20 section-padding">
+    <section id="about" className="py-10 section-padding">
       <div className="container-max">
         <div className="section-container">
           <h2 className="text-4xl font-bold text-center mb-12 text-white">About Me</h2>

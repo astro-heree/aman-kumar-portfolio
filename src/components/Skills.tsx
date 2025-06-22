@@ -14,18 +14,158 @@ import RubyIcon from '../icons/ruby.svg';
 import PythonIcon from '../icons/python.svg';
 import FlaskIcon from '../icons/icons8-flask.svg';
 import RubyOnRailsIcon from '../icons/rails-1.svg';
+import NextIcon from '../icons/nextjs-icon-svgrepo-com.svg';
+import HTMLIcon from '../icons/html-1.svg';
+import CSSIcon from '../icons/css-3.svg';
+import TailwindIcon from '../icons/tailwind-css-2.svg';
+import DockerIcon from '../icons/docker-4.svg';
+import LiveKitIcon from '../icons/livekit-color.svg';
+import SidekiqIcon from '../icons/sidekiq-svgrepo-com.svg';
+import ExpressIcon from '../icons/expressjs-icon.svg';
+import BootstrapIcon from '../icons/bootstrap-5-1.svg';
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 section-padding">
+    <section id="skills" className="py-10 section-padding">
       <div className="container-max">
         <div className="section-container">
           <h2 className="text-4xl font-bold text-center mb-16 text-white">Technical Skills</h2>
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Programming Languages */}
+          
+          {/* First Row - Web Technologies */}
+          <div className="mb-12">
             <div className="glow-card">
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2L2 7v10c0 5.55 3.84 9.95 8.9 10.91c.69.13 1.41.13 2.1 0C18.16 26.95 22 22.55 22 17V7L12 2z"/>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-semibold text-white">Web Technologies</h3>
+              </div>
+              <div className="grid grid-cols-5 gap-6">
+                <div className="group text-center">
+                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
+                    <Image src={ReactIcon} alt="React" width={48} height={48} />
+                  </div>
+                  <p className="text-slate-300 font-medium">React</p>
+                </div>
+                <div className="group text-center">
+                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
+                    <Image src={HTMLIcon} alt="HTML5" width={48} height={48} />
+                  </div>
+                  <p className="text-slate-300 font-medium">HTML5</p>
+                </div>
+                <div className="group text-center">
+                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
+                    <Image src={CSSIcon} alt="CSS3" width={48} height={48} />
+                  </div>
+                  <p className="text-slate-300 font-medium">CSS3</p>
+                </div>
+                <div className="group text-center">
+                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
+                    <Image src={ReduxIcon} alt="Redux" width={48} height={48} />
+                  </div>
+                  <p className="text-slate-300 font-medium">Redux</p>
+                </div>
+                <div className="group text-center">
+                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
+                    <Image src={BootstrapIcon} alt="Bootstrap" width={48} height={48} />
+                  </div>
+                  <p className="text-slate-300 font-medium">Bootstrap</p>
+                </div>
+                <div className="group text-center">
+                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
+                    <Image src={RubyOnRailsIcon} alt="Ruby on Rails" width={64} height={64} />
+                  </div>
+                  <p className="text-slate-300 font-medium">Ruby on Rails</p>
+                </div>
+                <div className="group text-center">
+                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
+                    <Image src={FlaskIcon} alt="Flask" width={64} height={64} />
+                  </div>
+                  <p className="text-slate-300 font-medium">Flask</p>
+                </div>
+                <div className="group text-center">
+                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
+                    <Image src={FastAPIIcon} alt="FastAPI" width={48} height={48} />
+                  </div>
+                  <p className="text-slate-300 font-medium">FastAPI</p>
+                </div>
+                <div className="group text-center">
+                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
+                    <Image src={SidekiqIcon} alt="Sidekiq" width={70} height={70} />
+                  </div>
+                  <p className="text-slate-300 font-medium">Sidekiq</p>
+                </div>
+                <div className="group text-center">
+                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
+                    <Image src={ExpressIcon} alt="Express.js" width={48} height={48} />
+                  </div>
+                  <p className="text-slate-300 font-medium">Express.js</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Second Row - Tools & Programming Languages */}
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Tools & Platforms */}
+            <div className="glow-card">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center">
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2L1 7v10l11 5 11-5V7L12 2zm8.5 14.5L12 20.5l-8.5-4V8.5L12 12.5l8.5-4v8z"/>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-semibold text-white">Tools & Platforms</h3>
+              </div>
+              <div className="grid grid-cols-3 gap-6">
+                <div className="group text-center">
+                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
+                    <Image src={GitIcon} alt="Git" width={48} height={48} />
+                  </div>
+                  <p className="text-slate-300 font-medium">Git</p>
+                </div>
+                <div className="group text-center">
+                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
+                    <Image src={PostmanIcon} alt="Postman" width={48} height={48} />
+                  </div>
+                  <p className="text-slate-300 font-medium">Postman</p>
+                </div>
+                <div className="group text-center">
+                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
+                    <Image src={DockerIcon} alt="Docker" width={48} height={48} />
+                  </div>
+                  <p className="text-slate-300 font-medium">Docker</p>
+                </div>
+                <div className="group text-center">
+                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
+                    <svg className="w-12 h-12" viewBox="0 0 32 32">
+                      <rect width="32" height="32" fill="#24292e"/>
+                      <path fill="#ffffff" d="M16 3.6C9.5 3.6 4.2 8.9 4.2 15.4c0 5.2 3.4 9.6 8.1 11.2.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2.9-.3 1.9-.4 2.9-.4s2 .1 2.9.4c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.7-1.6 8.1-6 8.1-11.2C27.8 8.9 22.5 3.6 16 3.6z"/>
+                    </svg>
+                  </div>
+                  <p className="text-slate-300 font-medium">GitHub</p>
+                </div>
+                <div className="group text-center">
+                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
+                    <Image src={PostgreSQLIcon} alt="PostgreSQL" width={48} height={48} />
+                  </div>
+                  <p className="text-slate-300 font-medium">PostgreSQL</p>
+                </div>
+                <div className="group text-center">
+                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
+                    <Image src={LiveKitIcon} alt="LiveKit" width={48} height={48} />
+                  </div>
+                  <p className="text-slate-300 font-medium">LiveKit</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Programming Languages */}
+            <div className="glow-card">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center">
                   <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2L3 7L12 12L21 7L12 2Z"/>
                     <path d="M3 17L12 22L21 17"/>
@@ -55,168 +195,16 @@ export default function Skills() {
                 </div>
                 <div className="group text-center">
                   <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
-                    <Image src={RubyIcon} alt="Ruby" width={48} height={48} />
-                  </div>
-                  <p className="text-slate-300 font-medium">Ruby</p>
-                </div>
-                <div className="group text-center">
-                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
                     <Image src={PythonIcon} alt="Python" width={48} height={48} />
                   </div>
                   <p className="text-slate-300 font-medium">Python</p>
                 </div>
-              </div>
-            </div>
-
-            {/* Technologies & Frameworks */}
-            <div className="glow-card">
-              <div className="flex items-center gap-3 mb-8">
-                <div className="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-semibold text-white">Technologies & Frameworks</h3>
-              </div>
-              <div className="grid grid-cols-4 gap-6">
                 <div className="group text-center">
                   <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
-                    <Image src={ReactIcon} alt="React" width={48} height={48} />
+                    <Image src={RubyIcon} alt="Ruby" width={48} height={48} />
                   </div>
-                  <p className="text-slate-300 font-medium">React</p>
+                  <p className="text-slate-300 font-medium">Ruby</p>
                 </div>
-                <div className="group text-center">
-                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
-                    <Image src={ReduxIcon} alt="Redux" width={48} height={48} />
-                  </div>
-                  <p className="text-slate-300 font-medium">Redux</p>
-                </div>
-                <div className="group text-center">
-                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
-                    <Image src={GitIcon} alt="Git" width={48} height={48} />
-                  </div>
-                  <p className="text-slate-300 font-medium">Git</p>
-                </div>
-                <div className="group text-center">
-                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
-                    <Image src={PostmanIcon} alt="Postman" width={48} height={48} />
-                  </div>
-                  <p className="text-slate-300 font-medium">Postman</p>
-                </div>
-                <div className="group text-center">
-                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
-                    <Image src={PostgreSQLIcon} alt="PostgreSQL" width={48} height={48} />
-                  </div>
-                  <p className="text-slate-300 font-medium">PostgreSQL</p>
-                </div>
-                <div className="group text-center">
-                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
-                    <Image src={FlaskIcon} alt="Flask" width={62} height={62} />
-                  </div>
-                  <p className="text-slate-300 font-medium">Flask</p>
-                </div>
-                <div className="group text-center">
-                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
-                    <Image src={FastAPIIcon} alt="FastAPI" width={48} height={48} />
-                  </div>
-                  <p className="text-slate-300 font-medium">FastAPI</p>
-                </div>
-                <div className="group text-center">
-                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
-                    <Image src={RubyOnRailsIcon} alt="Ruby on Rails" width={62} height={62} />
-                  </div>
-                  <p className="text-slate-300 font-medium">Ruby on Rails</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Web Technologies */}
-            <div className="glow-card">
-              <div className="flex items-center gap-3 mb-8">
-                <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2L2 7v10c0 5.55 3.84 9.95 8.9 10.91c.69.13 1.41.13 2.1 0C18.16 26.95 22 22.55 22 17V7L12 2z"/>
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-semibold text-white">Web Technologies</h3>
-              </div>
-              <div className="grid grid-cols-5 gap-6">
-                <div className="group text-center">
-                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-12 h-12" viewBox="0 0 32 32">
-                      <path fill="#e34c26" d="M6 2l2.5 28.1L16 32l7.5-1.9L26 2H6z"/>
-                      <path fill="#ef652a" d="M16 30V4h10l-2.5 26L16 30z"/>
-                      <path fill="#ebebeb" d="M16 13.4H9.8l-.3-3.7H16V6.3H5.8l.8 8.8H16v-1.7z"/>
-                      <path fill="#fff" d="M22.2 9.7l-.3 3.7H16v3.4h5.3l-.5 5.7L16 24v3.5l7.5-2.1.8-8.8H16V13.4h6.5z"/>
-                    </svg>
-                  </div>
-                  <p className="text-slate-300 font-medium">HTML5</p>
-                </div>
-                <div className="group text-center">
-                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-12 h-12" viewBox="0 0 32 32">
-                      <path fill="#1572b6" d="M6 2l2.5 28.1L16 32l7.5-1.9L26 2H6z"/>
-                      <path fill="#33a9dc" d="M16 30V4h10l-2.5 26L16 30z"/>
-                      <path fill="#fff" d="M16 13.4v3.4h5.3l-.5 5.7L16 24v3.5l7.5-2.1.8-8.8H16z"/>
-                      <path fill="#ebebeb" d="M16 13.4H9.8l-.3-3.7H16V6.3H5.8l.8 8.8H16v-1.7zm0 7.1l-4.3-1.2-.3-3.2h3.4v3.4h1.2z"/>
-                    </svg>
-                  </div>
-                  <p className="text-slate-300 font-medium">CSS3</p>
-                </div>
-                <div className="group text-center">
-                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-12 h-12" viewBox="0 0 32 32">
-                      <path fill="#7952b3" d="M16 2L4 6v20l12 4 12-4V6L16 2z"/>
-                      <path fill="#fff" d="M8 12h16v2H8v-2zm0 4h12v2H8v-2zm0 4h8v2H8v-2z"/>
-                    </svg>
-                  </div>
-                  <p className="text-slate-300 font-medium">Bootstrap</p>
-                </div>
-                <div className="group text-center">
-                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-12 h-12" viewBox="0 0 32 32">
-                      <circle cx="16" cy="16" r="14" fill="#009688"/>
-                      <path fill="#fff" d="M8 10h16v2H8v-2zm0 4h12v2H8v-2zm0 4h8v2H8v-2zm0 4h6v2H8v-2z"/>
-                    </svg>
-                  </div>
-                  <p className="text-slate-300 font-medium">REST APIs</p>
-                </div>
-                <div className="group text-center">
-                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-12 h-12" viewBox="0 0 32 32">
-                      <path fill="#cc0000" d="M16 2L4 6v20l12 4 12-4V6L16 2z"/>
-                      <path fill="#fff" d="M10 8h12v2H10V8zm0 4h8v2h-8v-2zm0 4h10v2H10v-2zm0 4h6v2h-6v-2z"/>
-                    </svg>
-                  </div>
-                  <p className="text-slate-300 font-medium">Sidekiq</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Core Concepts */}
-            <div className="glow-card">
-              <div className="flex items-center gap-3 mb-8">
-                <div className="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-semibold text-white">Core Concepts</h3>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {[
-                  { name: 'Data Structures', desc: 'Arrays, Trees, Graphs, Hash Tables' },
-                  { name: 'Algorithms', desc: 'Sorting, Searching, Dynamic Programming' },
-                  { name: 'Object Oriented Programming', desc: 'Encapsulation, Inheritance, Polymorphism' },
-                  { name: 'Operating System', desc: 'Process Management, Memory Management' },
-                  { name: 'Database Management System', desc: 'SQL, Normalization, Indexing' },
-                  { name: 'Standard Template Library', desc: 'C++ STL, Containers, Iterators' }
-                ].map((concept) => (
-                  <div key={concept.name} className="skill-card-enhanced hover:scale-105">
-                    <h4 className="text-white font-semibold mb-2">{concept.name}</h4>
-                    <p className="text-slate-400 text-sm">{concept.desc}</p>
-                  </div>
-                ))}
               </div>
             </div>
           </div>

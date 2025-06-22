@@ -10,72 +10,55 @@ export default function Experience() {
   const experiences = [
     {
       title: "Software Engineer",
-      company: "Iksha Labs",
-      location: "Remote",
-      duration: "2024 - Present",
+      company: "Iksha Labs Private Limited",
+      location: "Gurugram, Haryana",
+      duration: "August 2024 - Present",
       type: "Full-time",
-      description: "Working on cutting-edge AI solutions and microservice architectures",
+      description: "Working on cutting-edge AI solutions and microservice architectures for automated customer service platforms",
       achievements: [
-        "Developed a microservice-based AI call agent platform supporting Hindi and English languages",
-        "Reduced manual call handling by 80% through automated AI-driven solutions",
-        "Optimized speech processing pipelines, improving response time by 35%",
-        "Architected multi-repository systems with scalable database schemas",
-        "Implemented real-time communication features using WebSocket technology"
+        "Developed microservice-based AI call agent platform supporting Hindi and English languages, automating customer requirement gathering and reducing manual call handling by 80%",
+        "Architected multi-repository system using Python, FastAPI, and Pydantic validation, enabling concurrent call processing across distributed services",
+        "Optimized speech-to-text and text-to-speech pipeline by benchmarking Deepgram, Amazon Polly, OpenAI, and Grok APIs, achieving 35% faster processing and 40% improved audio quality",
+        "Designed PostgreSQL database schema with optimized queries for bilingual call processing, improving response times by 70%",
+        "Extended Activepieces open-source automation tool with custom code contributions for post-call workflows, reducing development time by 95% and cutting SaaS costs",
+        "Created multilingual AI prompt engineering systems (500+ lines) for healthcare, sales, and loan recovery use cases, reducing call handling time by 40%"
       ],
-      technologies: ["Python", "FastAPI", "PostgreSQL", "Redis", "Docker", "AI/ML", "WebSocket"]
+      technologies: ["Python", "FastAPI", "PostgreSQL", "Pydantic", "AI/ML", "Deepgram", "OpenAI", "Grok APIs", "Amazon Polly"]
     },
     {
-      title: "Software Development Intern",
-      company: "Tech Startup",
-      location: "Bangalore, India",
-      duration: "Summer 2023",
+      title: "Software Engineer Intern",
+      company: "Iksha Labs Private Limited",
+      location: "Gurugram, Haryana",
+      duration: "October 2023 - July 2024",
       type: "Internship",
-      description: "Contributed to full-stack web development projects and gained hands-on experience",
+      description: "Built AI-powered interview platforms and scalable backend systems with focus on performance optimization",
       achievements: [
-        "Built responsive web applications using React and Node.js",
-        "Integrated third-party APIs and payment gateways",
-        "Collaborated with cross-functional teams in agile development environment",
-        "Participated in code reviews and maintained high code quality standards"
+        "Built AI Interview Platform automating candidate assessment processes, reducing interviewer workload by 60% and improving assessment accuracy by 30%",
+        "Migrated AWS S3 upload architecture from presigned URLs to multipart uploads, decreasing upload failure rate from 40% to under 5%",
+        "Implemented queue-based upload system ensuring 99% upload success rate despite network interruptions, significantly improving user retention",
+        "Developed real-time microphone monitoring system using custom React hooks, reducing help requests by 80% and enabling independent interview completion",
+        "Built 50+ REST APIs using Flask for backend data processing and integrated 80+ frontend APIs with Redux for state management"
       ],
-      technologies: ["React", "Node.js", "MongoDB", "Express.js", "JavaScript", "Git"]
+      technologies: ["React", "Redux", "Flask", "AWS S3", "Python", "REST APIs", "JavaScript", "Custom React Hooks"]
     }
   ];
 
-  const projects = [
-    {
-      name: "AI Call Agent Platform",
-      role: "Lead Developer",
-      description: "Microservice-based platform for automated customer service",
-      impact: "80% reduction in manual handling"
-    },
-    {
-      name: "Speech Processing Pipeline",
-      role: "Backend Engineer",
-      description: "Real-time speech recognition and processing system",
-      impact: "35% faster response times"
-    },
-    {
-      name: "Multi-language Support System",
-      role: "Full-stack Developer",
-      description: "Bilingual AI system supporting Hindi and English",
-      impact: "Expanded market reach significantly"
-    }
-  ];
+
 
   return (
-    <section id="experience" className="py-20 section-padding">
+    <section id="experience" className="py-10 section-padding">
       <div className="container-max">
         <div className="section-container">
           <h2 className="text-4xl font-bold text-center mb-12 text-white">Professional Experience</h2>
           
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="max-w-4xl mx-auto">
             {/* Work Experience */}
-            <div className="lg:col-span-2">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center">
-                  <BriefcaseIcon className="w-6 h-6 text-white" />
+            <div>
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center">
+                  <BriefcaseIcon className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="text-2xl font-semibold text-white">Work Experience</h3>
+                <h3 className="text-3xl font-semibold text-white">Work Experience</h3>
               </div>
               
               <div className="space-y-6">
@@ -138,57 +121,6 @@ export default function Experience() {
                     </div>
                   </div>
                 ))}
-              </div>
-            </div>
-
-            {/* Key Projects */}
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-semibold text-white">Key Projects</h3>
-              </div>
-              
-              <div className="space-y-4">
-                {projects.map((project, index) => (
-                  <div key={index} className="skill-card-enhanced">
-                    <div className="mb-4">
-                      <h4 className="text-lg font-semibold text-white mb-2">{project.name}</h4>
-                      <p className="text-purple-400 text-sm font-medium mb-2">{project.role}</p>
-                      <p className="text-slate-300 text-sm mb-3">{project.description}</p>
-                      <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                        <span className="text-green-400 text-sm font-medium">Impact: {project.impact}</span>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              
-              {/* Stats */}
-              <div className="mt-6 glow-card">
-                <h4 className="text-lg font-semibold text-white mb-4">Professional Stats</h4>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center">
-                    <span className="text-slate-300">Years of Experience</span>
-                    <span className="text-blue-400 font-semibold">1+</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-slate-300">Projects Completed</span>
-                    <span className="text-green-400 font-semibold">10+</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-slate-300">Technologies Mastered</span>
-                    <span className="text-purple-400 font-semibold">15+</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-slate-300">Code Commits</span>
-                    <span className="text-yellow-400 font-semibold">500+</span>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
