@@ -1,3 +1,6 @@
+'use client';
+
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -10,18 +13,30 @@ import Footer from "@/components/Footer";
 import Projects from "@/components/Projects";
 
 export default function Home() {
+  const [particles, setParticles] = useState<Array<{left: string; animationDelay: string; animationDuration: string}>>([]);
+
+  useEffect(() => {
+    // Generate particles only on client side to avoid hydration mismatch
+    const generatedParticles = [...Array(25)].map(() => ({
+      left: `${Math.random() * 100}%`,
+      animationDelay: `${Math.random() * 20}s`,
+      animationDuration: `${20 + Math.random() * 10}s`
+    }));
+    setParticles(generatedParticles);
+  }, []);
+
   return (
     <main className="min-h-screen bg-slate-900 relative">
       {/* Floating Particles Background */}
       <div className="floating-particles">
-        {[...Array(25)].map((_, i) => (
+        {particles.map((particle, i) => (
           <div
             key={i}
             className="particle"
             style={{
-              left: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 20}s`,
-              animationDuration: `${20 + Math.random() * 10}s`
+              left: particle.left,
+              animationDelay: particle.animationDelay,
+              animationDuration: particle.animationDuration
             }}
           />
         ))}
@@ -30,13 +45,13 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-slate-900/95 backdrop-blur-md border-b border-slate-700/50 z-50 shadow-lg">
         <div className="w-full px-4 sm:px-6 lg:px-8 py-3">
-          <div className="flex items-center">
-            <Link href="/" className="text-2xl font-bold gradient-text hover:scale-105 transition-transform duration-300">
+          <div className="flex items-center justify-between">
+            <Link href="/" className="text-xl sm:text-2xl font-bold gradient-text hover:scale-105 transition-transform duration-300">
               Aman Kumar
             </Link>
             
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-6 lg:space-x-8 ml-auto mr-0">
+            <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
               <Link href="#about" className="nav-link">
                 About
               </Link>
@@ -61,11 +76,44 @@ export default function Home() {
             </div>
 
             {/* Mobile Menu Button */}
-            <button className="md:hidden text-slate-300 hover:text-white transition-colors">
+            <button 
+              className="md:hidden text-slate-300 hover:text-white transition-colors p-2"
+              onClick={() => {
+                const mobileMenu = document.getElementById('mobile-menu');
+                mobileMenu?.classList.toggle('hidden');
+              }}
+            >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
+          </div>
+
+          {/* Mobile Navigation Menu */}
+          <div id="mobile-menu" className="hidden md:hidden mt-4 pb-4">
+            <div className="flex flex-col space-y-3">
+              <Link href="#about" className="nav-link block py-2 px-3 rounded-lg hover:bg-slate-800/50" onClick={() => document.getElementById('mobile-menu')?.classList.add('hidden')}>
+                About
+              </Link>
+              <Link href="#experience" className="nav-link block py-2 px-3 rounded-lg hover:bg-slate-800/50" onClick={() => document.getElementById('mobile-menu')?.classList.add('hidden')}>
+                Experience
+              </Link>
+              <Link href="#skills" className="nav-link block py-2 px-3 rounded-lg hover:bg-slate-800/50" onClick={() => document.getElementById('mobile-menu')?.classList.add('hidden')}>
+                Skills
+              </Link>
+              <Link href="#projects" className="nav-link block py-2 px-3 rounded-lg hover:bg-slate-800/50" onClick={() => document.getElementById('mobile-menu')?.classList.add('hidden')}>
+                Projects
+              </Link>
+              <Link href="#coding" className="nav-link block py-2 px-3 rounded-lg hover:bg-slate-800/50" onClick={() => document.getElementById('mobile-menu')?.classList.add('hidden')}>
+                Coding
+              </Link>
+              <Link href="#education" className="nav-link block py-2 px-3 rounded-lg hover:bg-slate-800/50" onClick={() => document.getElementById('mobile-menu')?.classList.add('hidden')}>
+                Education
+              </Link>
+              <Link href="#contact" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-4 py-3 rounded-lg text-center font-medium transition-all duration-300 mt-2" onClick={() => document.getElementById('mobile-menu')?.classList.add('hidden')}>
+                Contact
+              </Link>
+            </div>
           </div>
         </div>
       </nav>
