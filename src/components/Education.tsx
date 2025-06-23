@@ -88,10 +88,12 @@ export default function Education() {
                             
                             {/* Enhanced Details Section */}
                             <div className="flex flex-wrap gap-6 mb-4">
-                              {/* CGPA with Enhanced Styling */}
+                              {/* CGPA/Percentage with Enhanced Styling */}
                               <div className="flex items-center gap-2 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 px-4 py-2 rounded-full border border-yellow-500/30">
                                 <StarIcon className="w-4 h-4 text-yellow-400" />
-                                <span className="text-yellow-300 font-semibold text-sm">CGPA: {edu.cgpa}</span>
+                                <span className="text-yellow-300 font-semibold text-sm">
+                                  {edu.type === 'BTech' ? 'CGPA' : 'Percentage'}: {edu.cgpa}
+                                </span>
                               </div>
                               
                               {/* Type Badge with Gradient */}
@@ -146,10 +148,12 @@ export default function Education() {
                         
                         {/* Mobile Details */}
                         <div className="flex flex-col gap-3">
-                          {/* CGPA */}
+                          {/* CGPA/Percentage */}
                           <div className="flex items-center justify-center gap-2 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 px-4 py-2 rounded-full border border-yellow-500/30">
                             <StarIcon className="w-4 h-4 text-yellow-400" />
-                            <span className="text-yellow-300 font-semibold text-sm">CGPA: {edu.cgpa}</span>
+                            <span className="text-yellow-300 font-semibold text-sm">
+                              {edu.type === 'BTech' ? 'CGPA' : 'Percentage'}: {edu.cgpa}
+                            </span>
                           </div>
                           
                           {/* Type Badge */}

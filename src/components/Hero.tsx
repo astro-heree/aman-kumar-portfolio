@@ -154,7 +154,7 @@ export default function Hero() {
         </div>
 
         {/* Enhanced Social Icons */}
-        <div className="flex justify-center gap-8 mb-20 animate-fade-in-up animation-delay-2000">
+        <div className="flex justify-center gap-8 mb-4 animate-fade-in-up animation-delay-2000">
           <a 
             href="https://github.com/astro-heree" 
             target="_blank" 
@@ -184,17 +184,19 @@ export default function Hero() {
             </svg>
           </a>
         </div>
-      </div>
 
-      {/* Enhanced Scroll Down Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center animate-fade-in-up animation-delay-2500">
-        <p className="text-slate-500 text-sm mb-2">Scroll Down</p>
-        <div className="animate-bounce">
-          <svg className="w-5 h-5 text-slate-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
+        {/* Scroll Down Indicator - Positioned below social icons */}
+        <div className="flex flex-col items-center mb-8 animate-fade-in-up animation-delay-2500">
+          <p className="text-slate-500 text-sm mb-2">Scroll Down</p>
+          <div className="animate-bounce">
+            <svg className="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </div>
         </div>
       </div>
+
+
     </section>
   );
 } 

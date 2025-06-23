@@ -38,7 +38,7 @@ export default function About() {
                   From building comprehensive interview platforms during my internship to now architecting 
                   <span className="text-purple-400 font-semibold"> microservice-based AI call agent platforms</span> supporting multiple languages, 
                   I focus on creating solutions that bridge complex technology with user-friendly experiences. What drives me is the intersection of 
-                  <span className="text-yellow-400 font-semibold">artificial intelligence</span>, 
+                  <span className="text-yellow-400 font-semibold"> artificial intelligence</span>, 
                   <span className="text-pink-400 font-semibold"> scalable architecture</span>, and 
                   <span className="text-cyan-400 font-semibold"> performance optimization</span>.
                 </p>
