@@ -27,7 +27,7 @@ export default function Skills() {
     <section id="skills" className="py-10 section-padding">
       <div className="container-max">
         <div className="section-container section-skills">
-          <h2 className="text-4xl font-bold text-center mb-16 text-white">Technical Skills</h2>
+          <h2 className="text-4xl font-bold text-center mb-16 gradient-text">Technical Skills</h2>
           
           {/* First Row - Web Technologies */}
           <div className="mb-12">

@@ -49,7 +49,7 @@ export default function Experience() {
     <section id="experience" className="py-10 section-padding">
       <div className="container-max">
         <div className="section-container">
-          <h2 className="text-4xl font-bold text-center mb-12 text-white">Professional Experience</h2>
+          <h2 className="text-4xl font-bold text-center mb-12 gradient-text">Professional Experience</h2>
           
           <div className="max-w-4xl mx-auto">
             {/* Work Experience */}
