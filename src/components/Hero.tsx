@@ -82,7 +82,7 @@ export default function Hero() {
         {/* Greeting with Enhanced Animation */}
         <div className="mb-12 animate-fade-in-up">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-slate-300 mb-6 relative">
-            <span className="wave-animation">👋</span> Hi, I'm
+            <span className="wave-animation">👋</span> Hi, I&apos;m
           </h1>
           
           {/* Large Name with Glow Effect */}

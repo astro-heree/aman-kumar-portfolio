@@ -161,8 +161,8 @@ export default function Contact() {
               <div className="glow-card">
                 <h3 className="text-2xl font-bold text-cyan-400 mb-6">Let's Connect</h3>
                 <p className="text-slate-300 leading-relaxed">
-                  I'm currently open to new opportunities and collaborations. 
-                  Feel free to reach out if you'd like to discuss a project or just 
+                  I&apos;m currently open to new opportunities and collaborations. 
+                  Feel free to reach out if you&apos;d like to discuss a project or just 
                   say hello!
                 </p>
               </div>
@@ -174,7 +174,7 @@ export default function Contact() {
               
               {submitStatus === 'success' && (
                 <div className="mb-6 p-4 bg-green-900/50 border border-green-700 rounded-lg">
-                  <p className="text-green-300">Message sent successfully! I'll get back to you soon.</p>
+                  <p className="text-green-300">Message sent successfully! I&apos;ll get back to you soon.</p>
                 </div>
               )}
               
@@ -235,7 +235,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                    placeholder="What's this about?"
+                    placeholder="What&apos;s this about?"
                   />
                 </div>
                 

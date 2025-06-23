@@ -31,7 +31,7 @@ export default function About() {
                 <p className="text-slate-300 mb-4 leading-relaxed">
                   My journey in software engineering began with a curiosity for problem-solving and has evolved into a passion for building 
                   <span className="text-blue-400 font-semibold"> AI-powered solutions</span> that make a real impact. Currently working as a 
-                  <span className="text-green-400 font-semibold"> Software Engineer at Iksha Labs</span>, I've been at the forefront of 
+                  <span className="text-green-400 font-semibold"> Software Engineer at Iksha Labs</span>, I&apos;ve been at the forefront of 
                   developing cutting-edge conversational AI systems.
                 </p>
                 <p className="text-slate-300 mb-6 leading-relaxed">
