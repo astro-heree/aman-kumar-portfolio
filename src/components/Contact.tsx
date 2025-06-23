@@ -159,7 +159,7 @@ export default function Contact() {
               </div>
 
               <div className="glow-card">
-                <h3 className="text-2xl font-bold text-cyan-400 mb-6">Let's Connect</h3>
+                <h3 className="text-2xl font-bold text-cyan-400 mb-6">Let&apos;s Connect</h3>
                 <p className="text-slate-300 leading-relaxed">
                   I&apos;m currently open to new opportunities and collaborations. 
                   Feel free to reach out if you&apos;d like to discuss a project or just 
