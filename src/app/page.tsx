@@ -45,8 +45,8 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-slate-900/95 backdrop-blur-md border-b border-slate-700/50 z-50 shadow-lg">
         <div className="w-full px-4 sm:px-6 lg:px-8 py-3">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="text-xl sm:text-2xl font-bold gradient-text hover:scale-105 transition-transform duration-300">
+          <div className="flex items-center justify-between h-12">
+            <Link href="/" className="text-xl sm:text-2xl font-bold gradient-text hover:scale-105 transition-transform duration-300 z-10">
               Aman Kumar
             </Link>
             
@@ -75,42 +75,126 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Mobile Menu Button */}
+            {/* Mobile Menu Button - Improved */}
             <button 
-              className="md:hidden text-slate-300 hover:text-white transition-colors p-2"
+              className="md:hidden relative z-10 text-slate-300 hover:text-white transition-colors duration-200 p-3 -m-1 rounded-lg hover:bg-slate-800/50 active:bg-slate-700/50"
               onClick={() => {
                 const mobileMenu = document.getElementById('mobile-menu');
-                mobileMenu?.classList.toggle('hidden');
+                const button = document.querySelector('[data-mobile-menu-button]');
+                if (mobileMenu && button) {
+                  mobileMenu.classList.toggle('hidden');
+                  // Add visual feedback
+                  button.classList.toggle('text-blue-400');
+                }
               }}
+              data-mobile-menu-button
+              aria-label="Toggle mobile menu"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
           </div>
 
-          {/* Mobile Navigation Menu */}
-          <div id="mobile-menu" className="hidden md:hidden mt-4 pb-4">
-            <div className="flex flex-col space-y-3">
-              <Link href="#about" className="nav-link block py-2 px-3 rounded-lg hover:bg-slate-800/50" onClick={() => document.getElementById('mobile-menu')?.classList.add('hidden')}>
+          {/* Mobile Navigation Menu - Improved */}
+          <div id="mobile-menu" className="hidden md:hidden">
+            <div className="pt-4 pb-4 space-y-1 border-t border-slate-700/30 mt-3">
+              <Link 
+                href="#about" 
+                className="nav-link block py-3 px-4 rounded-lg hover:bg-slate-800/50 active:bg-slate-700/50 transition-colors duration-200" 
+                onClick={() => {
+                  const mobileMenu = document.getElementById('mobile-menu');
+                  const button = document.querySelector('[data-mobile-menu-button]');
+                  if (mobileMenu && button) {
+                    mobileMenu.classList.add('hidden');
+                    button.classList.remove('text-blue-400');
+                  }
+                }}
+              >
                 About
               </Link>
-              <Link href="#experience" className="nav-link block py-2 px-3 rounded-lg hover:bg-slate-800/50" onClick={() => document.getElementById('mobile-menu')?.classList.add('hidden')}>
+              <Link 
+                href="#experience" 
+                className="nav-link block py-3 px-4 rounded-lg hover:bg-slate-800/50 active:bg-slate-700/50 transition-colors duration-200" 
+                onClick={() => {
+                  const mobileMenu = document.getElementById('mobile-menu');
+                  const button = document.querySelector('[data-mobile-menu-button]');
+                  if (mobileMenu && button) {
+                    mobileMenu.classList.add('hidden');
+                    button.classList.remove('text-blue-400');
+                  }
+                }}
+              >
                 Experience
               </Link>
-              <Link href="#skills" className="nav-link block py-2 px-3 rounded-lg hover:bg-slate-800/50" onClick={() => document.getElementById('mobile-menu')?.classList.add('hidden')}>
+              <Link 
+                href="#skills" 
+                className="nav-link block py-3 px-4 rounded-lg hover:bg-slate-800/50 active:bg-slate-700/50 transition-colors duration-200" 
+                onClick={() => {
+                  const mobileMenu = document.getElementById('mobile-menu');
+                  const button = document.querySelector('[data-mobile-menu-button]');
+                  if (mobileMenu && button) {
+                    mobileMenu.classList.add('hidden');
+                    button.classList.remove('text-blue-400');
+                  }
+                }}
+              >
                 Skills
               </Link>
-              <Link href="#projects" className="nav-link block py-2 px-3 rounded-lg hover:bg-slate-800/50" onClick={() => document.getElementById('mobile-menu')?.classList.add('hidden')}>
+              <Link 
+                href="#projects" 
+                className="nav-link block py-3 px-4 rounded-lg hover:bg-slate-800/50 active:bg-slate-700/50 transition-colors duration-200" 
+                onClick={() => {
+                  const mobileMenu = document.getElementById('mobile-menu');
+                  const button = document.querySelector('[data-mobile-menu-button]');
+                  if (mobileMenu && button) {
+                    mobileMenu.classList.add('hidden');
+                    button.classList.remove('text-blue-400');
+                  }
+                }}
+              >
                 Projects
               </Link>
-              <Link href="#coding" className="nav-link block py-2 px-3 rounded-lg hover:bg-slate-800/50" onClick={() => document.getElementById('mobile-menu')?.classList.add('hidden')}>
+              <Link 
+                href="#coding" 
+                className="nav-link block py-3 px-4 rounded-lg hover:bg-slate-800/50 active:bg-slate-700/50 transition-colors duration-200" 
+                onClick={() => {
+                  const mobileMenu = document.getElementById('mobile-menu');
+                  const button = document.querySelector('[data-mobile-menu-button]');
+                  if (mobileMenu && button) {
+                    mobileMenu.classList.add('hidden');
+                    button.classList.remove('text-blue-400');
+                  }
+                }}
+              >
                 Coding
               </Link>
-              <Link href="#education" className="nav-link block py-2 px-3 rounded-lg hover:bg-slate-800/50" onClick={() => document.getElementById('mobile-menu')?.classList.add('hidden')}>
+              <Link 
+                href="#education" 
+                className="nav-link block py-3 px-4 rounded-lg hover:bg-slate-800/50 active:bg-slate-700/50 transition-colors duration-200" 
+                onClick={() => {
+                  const mobileMenu = document.getElementById('mobile-menu');
+                  const button = document.querySelector('[data-mobile-menu-button]');
+                  if (mobileMenu && button) {
+                    mobileMenu.classList.add('hidden');
+                    button.classList.remove('text-blue-400');
+                  }
+                }}
+              >
                 Education
               </Link>
-              <Link href="#contact" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-4 py-3 rounded-lg text-center font-medium transition-all duration-300 mt-2" onClick={() => document.getElementById('mobile-menu')?.classList.add('hidden')}>
+              <Link 
+                href="#contact" 
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-4 py-3 rounded-lg text-center font-medium transition-all duration-300 mt-3 block" 
+                onClick={() => {
+                  const mobileMenu = document.getElementById('mobile-menu');
+                  const button = document.querySelector('[data-mobile-menu-button]');
+                  if (mobileMenu && button) {
+                    mobileMenu.classList.add('hidden');
+                    button.classList.remove('text-blue-400');
+                  }
+                }}
+              >
                 Contact
               </Link>
             </div>
@@ -145,7 +229,7 @@ export default function Home() {
       <Contact />
 
       {/* Footer */}
-      <Footer />
+      <Footer /> 
     </main>
   );
 }

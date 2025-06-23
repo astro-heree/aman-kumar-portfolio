@@ -31,17 +31,17 @@ export default function Education() {
   ];
 
   return (
-    <section id="education" className="py-10 section-padding">
+    <section id="education" className="py-8 sm:py-10 lg:py-16 section-padding">
       <div className="container-max">
         <div className="section-container">
           {/* Enhanced Header */}
-          <div className="text-center mb-12 md:mb-20">
-            <div className="inline-flex items-center gap-4 mb-6">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold gradient-text">
+          <div className="text-center mb-8 sm:mb-12 md:mb-20">
+            <div className="inline-flex items-center gap-4 mb-4 sm:mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold gradient-text">
                 Education
               </h2>
             </div>
-            <p className="text-slate-400 text-base md:text-lg max-w-2xl mx-auto px-4">
+            <p className="text-slate-400 text-sm sm:text-base md:text-lg max-w-2xl mx-auto px-2 sm:px-4">
               My academic journey through various institutions that shaped my technical foundation
             </p>
           </div>
@@ -119,46 +119,46 @@ export default function Education() {
 
             {/* Mobile Layout - Visible only on mobile */}
             <div className="block md:hidden">
-              <div className="space-y-6">
+              <div className="space-y-4 sm:space-y-6">
                 {education.map((edu, index) => (
                   <div key={index} className="relative">
                     {/* Mobile Card */}
-                    <div className="relative bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50">
+                    <div className="relative bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-slate-700/50">
                       {/* Subtle Background Pattern */}
-                      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-2xl"></div>
+                      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-xl sm:rounded-2xl"></div>
                       
                       <div className="relative z-10">
                         {/* Mobile Header */}
-                        <div className="text-center mb-4">
+                        <div className="text-center mb-3 sm:mb-4">
                           {/* Duration Badge */}
-                          <div className={`inline-block px-4 py-2 bg-gradient-to-r ${edu.color} rounded-full text-white font-bold text-lg shadow-lg mb-3`}>
+                          <div className={`inline-block px-3 sm:px-4 py-1.5 sm:py-2 bg-gradient-to-r ${edu.color} rounded-full text-white font-bold text-sm sm:text-lg shadow-lg mb-2 sm:mb-3`}>
                             {edu.duration}
                           </div>
                           
                           {/* Institution Name */}
-                          <h4 className="text-lg font-bold text-white mb-2 leading-tight">
+                          <h4 className="text-base sm:text-lg font-bold text-white mb-2 leading-tight px-1">
                             {edu.institution}
                           </h4>
                           
                           {/* Degree */}
-                          <h5 className="text-base text-slate-300 font-medium leading-relaxed">
+                          <h5 className="text-sm sm:text-base text-slate-300 font-medium leading-relaxed px-1">
                             {edu.degree}
                           </h5>
                         </div>
                         
                         {/* Mobile Details */}
-                        <div className="flex flex-col gap-3">
+                        <div className="flex flex-col gap-2 sm:gap-3">
                           {/* CGPA/Percentage */}
-                          <div className="flex items-center justify-center gap-2 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 px-4 py-2 rounded-full border border-yellow-500/30">
-                            <StarIcon className="w-4 h-4 text-yellow-400" />
-                            <span className="text-yellow-300 font-semibold text-sm">
+                          <div className="flex items-center justify-center gap-2 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 px-3 sm:px-4 py-2 rounded-full border border-yellow-500/30">
+                            <StarIcon className="w-3 h-3 sm:w-4 sm:h-4 text-yellow-400" />
+                            <span className="text-yellow-300 font-semibold text-xs sm:text-sm">
                               {edu.type === 'BTech' ? 'CGPA' : 'Percentage'}: {edu.cgpa}
                             </span>
                           </div>
                           
                           {/* Type Badge */}
                           <div className="text-center">
-                            <div className={`inline-block px-4 py-2 bg-gradient-to-r ${edu.color} rounded-full text-white text-sm font-medium shadow-lg`}>
+                            <div className={`inline-block px-3 sm:px-4 py-1.5 sm:py-2 bg-gradient-to-r ${edu.color} rounded-full text-white text-xs sm:text-sm font-medium shadow-lg`}>
                               {edu.type}
                             </div>
                           </div>
@@ -166,14 +166,14 @@ export default function Education() {
                       </div>
                       
                       {/* Mobile Decorative Elements */}
-                      <div className={`absolute top-3 right-3 w-8 h-8 bg-gradient-to-br ${edu.color} rounded-full opacity-10`}></div>
-                      <div className={`absolute bottom-3 left-3 w-6 h-6 bg-gradient-to-br ${edu.color} rounded-full opacity-10`}></div>
+                      <div className={`absolute top-2 sm:top-3 right-2 sm:right-3 w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-br ${edu.color} rounded-full opacity-10`}></div>
+                      <div className={`absolute bottom-2 sm:bottom-3 left-2 sm:left-3 w-4 h-4 sm:w-6 sm:h-6 bg-gradient-to-br ${edu.color} rounded-full opacity-10`}></div>
                     </div>
                     
                     {/* Mobile Timeline Connector */}
                     {index < education.length - 1 && (
-                      <div className="flex justify-center my-4">
-                        <div className="w-1 h-8 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full opacity-60"></div>
+                      <div className="flex justify-center my-3 sm:my-4">
+                        <div className="w-1 h-6 sm:h-8 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full opacity-60"></div>
                       </div>
                     )}
                   </div>
