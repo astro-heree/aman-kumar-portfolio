@@ -189,10 +189,15 @@ export default function Projects() {
                       <span className="text-sm font-medium">Live Demo</span>
                       <ArrowTopRightOnSquareIcon className="w-4 h-4" />
                     </a>
-                    <button className="flex items-center gap-2 px-4 py-2 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded-lg transition-colors">
+                    <a 
+                      href="https://github.com/astro-heree/Code-Together" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded-lg transition-colors"
+                    >
                       <span className="text-sm font-medium">GitHub</span>
                       <ArrowTopRightOnSquareIcon className="w-4 h-4" />
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -352,10 +357,15 @@ export default function Projects() {
                       <span className="text-sm font-medium">Live Demo</span>
                       <ArrowTopRightOnSquareIcon className="w-4 h-4" />
                     </a>
-                    <button className="flex items-center justify-center gap-2 px-4 py-3 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded-lg transition-colors w-full">
+                    <a 
+                      href="https://github.com/astro-heree/Code-Together" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 px-4 py-3 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded-lg transition-colors w-full"
+                    >
                       <span className="text-sm font-medium">GitHub</span>
                       <ArrowTopRightOnSquareIcon className="w-4 h-4" />
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
