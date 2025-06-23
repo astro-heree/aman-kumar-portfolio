@@ -28,7 +28,7 @@ export default function Skills() {
   return (
     <section id="skills" className="py-10 section-padding">
       <div className="container-max">
-        <div className="section-container">
+        <div className="section-container section-skills">
           <h2 className="text-4xl font-bold text-center mb-16 text-white">Technical Skills</h2>
           
           {/* First Row - Web Technologies */}
@@ -36,72 +36,82 @@ export default function Skills() {
             <div className="glow-card">
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2L2 7v10c0 5.55 3.84 9.95 8.9 10.91c.69.13 1.41.13 2.1 0C18.16 26.95 22 22.55 22 17V7L12 2z"/>
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                   </svg>
                 </div>
                 <h3 className="text-2xl font-semibold text-white">Web Technologies</h3>
               </div>
               <div className="grid grid-cols-5 gap-6">
+                {/* 1. React */}
                 <div className="group text-center">
                   <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
                     <Image src={ReactIcon} alt="React" width={48} height={48} />
                   </div>
                   <p className="text-slate-300 font-medium">React</p>
                 </div>
-                <div className="group text-center">
-                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
-                    <Image src={HTMLIcon} alt="HTML5" width={48} height={48} />
-                  </div>
-                  <p className="text-slate-300 font-medium">HTML5</p>
-                </div>
-                <div className="group text-center">
-                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
-                    <Image src={CSSIcon} alt="CSS3" width={48} height={48} />
-                  </div>
-                  <p className="text-slate-300 font-medium">CSS3</p>
-                </div>
+                {/* 2. Redux */}
                 <div className="group text-center">
                   <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
                     <Image src={ReduxIcon} alt="Redux" width={48} height={48} />
                   </div>
                   <p className="text-slate-300 font-medium">Redux</p>
                 </div>
-                <div className="group text-center">
-                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
-                    <Image src={BootstrapIcon} alt="Bootstrap" width={48} height={48} />
-                  </div>
-                  <p className="text-slate-300 font-medium">Bootstrap</p>
-                </div>
+                {/* 3. Ruby on Rails */}
                 <div className="group text-center">
                   <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
                     <Image src={RubyOnRailsIcon} alt="Ruby on Rails" width={64} height={64} />
                   </div>
                   <p className="text-slate-300 font-medium">Ruby on Rails</p>
                 </div>
-                <div className="group text-center">
-                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
-                    <Image src={FlaskIcon} alt="Flask" width={64} height={64} />
-                  </div>
-                  <p className="text-slate-300 font-medium">Flask</p>
-                </div>
+                {/* 4. FastAPI */}
                 <div className="group text-center">
                   <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
                     <Image src={FastAPIIcon} alt="FastAPI" width={48} height={48} />
                   </div>
                   <p className="text-slate-300 font-medium">FastAPI</p>
                 </div>
+                {/* 5. Flask */}
+                <div className="group text-center">
+                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
+                    <Image src={FlaskIcon} alt="Flask" width={64} height={64} />
+                  </div>
+                  <p className="text-slate-300 font-medium">Flask</p>
+                </div>
+                {/* 6. Sidekiq */}
                 <div className="group text-center">
                   <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
                     <Image src={SidekiqIcon} alt="Sidekiq" width={70} height={70} />
                   </div>
                   <p className="text-slate-300 font-medium">Sidekiq</p>
                 </div>
+                {/* 7. Express */}
                 <div className="group text-center">
                   <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
                     <Image src={ExpressIcon} alt="Express.js" width={48} height={48} />
                   </div>
                   <p className="text-slate-300 font-medium">Express.js</p>
+                </div>
+                {/* 8. Bootstrap */}
+                <div className="group text-center">
+                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
+                    <Image src={BootstrapIcon} alt="Bootstrap" width={48} height={48} />
+                  </div>
+                  <p className="text-slate-300 font-medium">Bootstrap</p>
+                </div>
+                {/* 9. HTML5 */}
+                <div className="group text-center">
+                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
+                    <Image src={HTMLIcon} alt="HTML5" width={48} height={48} />
+                  </div>
+                  <p className="text-slate-300 font-medium">HTML5</p>
+                </div>
+                {/* 10. CSS3 */}
+                <div className="group text-center">
+                  <div className="w-20 h-20 tech-icon-card flex items-center justify-center mx-auto mb-4">
+                    <Image src={CSSIcon} alt="CSS3" width={48} height={48} />
+                  </div>
+                  <p className="text-slate-300 font-medium">CSS3</p>
                 </div>
               </div>
             </div>
@@ -113,8 +123,9 @@ export default function Skills() {
             <div className="glow-card">
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2L1 7v10l11 5 11-5V7L12 2zm8.5 14.5L12 20.5l-8.5-4V8.5L12 12.5l8.5-4v8z"/>
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
                 <h3 className="text-2xl font-semibold text-white">Tools & Platforms</h3>
@@ -166,10 +177,8 @@ export default function Skills() {
             <div className="glow-card">
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2L3 7L12 12L21 7L12 2Z"/>
-                    <path d="M3 17L12 22L21 17"/>
-                    <path d="M3 12L12 17L21 12"/>
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                   </svg>
                 </div>
                 <h3 className="text-2xl font-semibold text-white">Programming Languages</h3>

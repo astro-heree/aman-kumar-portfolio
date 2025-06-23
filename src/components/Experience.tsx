@@ -23,7 +23,7 @@ export default function Experience() {
         "Extended Activepieces open-source automation tool with custom code contributions for post-call workflows, reducing development time by 95% and cutting SaaS costs",
         "Created multilingual AI prompt engineering systems (500+ lines) for healthcare, sales, and loan recovery use cases, reducing call handling time by 40%"
       ],
-      technologies: ["Python", "FastAPI", "PostgreSQL", "Pydantic", "AI/ML", "Deepgram", "OpenAI", "Grok APIs", "Amazon Polly"]
+      technologies: ["Python", "FastAPI", "PostgreSQL", "Pydantic", "Deepgram", "OpenAI", "Grok APIs", "Amazon Polly"]
     },
     {
       title: "Software Engineer Intern",
