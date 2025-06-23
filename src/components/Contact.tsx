@@ -91,7 +91,7 @@ export default function Contact() {
     <section id="contact" className="py-10 section-padding">
       <div className="container-max">
         <div className="section-container section-contact">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-white">Get In Touch</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 md:mb-12 gradient-text">Get In Touch</h2>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
             {/* Contact Information */}

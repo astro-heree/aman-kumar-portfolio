@@ -1,5 +1,4 @@
-import { 
-  AcademicCapIcon,
+import {
   StarIcon
 } from "@heroicons/react/24/outline";
 
@@ -38,10 +37,7 @@ export default function Education() {
           {/* Enhanced Header */}
           <div className="text-center mb-12 md:mb-20">
             <div className="inline-flex items-center gap-4 mb-6">
-              <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-2xl shadow-blue-500/25">
-                <AcademicCapIcon className="w-8 h-8 md:w-10 md:h-10 text-white" />
-              </div>
-              <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold gradient-text">
                 Education
               </h2>
             </div>

@@ -14,7 +14,7 @@ export default function About() {
         <div className="section-container">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">About Me</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 gradient-text">About Me</h2>
             <p className="text-xl text-slate-400 max-w-3xl mx-auto">
               Passionate software engineer crafting innovative solutions at the intersection of AI and technology
             </p>

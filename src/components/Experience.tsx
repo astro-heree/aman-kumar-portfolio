@@ -47,7 +47,7 @@ export default function Experience() {
     <section id="experience" className="py-10 section-padding">
       <div className="container-max">
         <div className="section-container">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 gradient-text">Professional Experience</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 md:mb-12 gradient-text">Professional Experience</h2>
           
           {/* Mobile: Full width, Desktop: Constrained width */}
           <div className="w-full md:max-w-4xl md:mx-auto">
