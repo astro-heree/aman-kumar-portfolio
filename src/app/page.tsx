@@ -1,10 +1,4 @@
 import Link from "next/link";
-import { 
-  CalendarIcon,
-  AcademicCapIcon,
-  ArrowTopRightOnSquareIcon
-} from "@heroicons/react/24/outline";
-
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Education from "@/components/Education";

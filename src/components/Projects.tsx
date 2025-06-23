@@ -2,7 +2,6 @@ import {
   ArrowTopRightOnSquareIcon,
   CodeBracketIcon,
   UsersIcon,
-  VideoCameraIcon,
   SignalIcon
 } from "@heroicons/react/24/outline";
 

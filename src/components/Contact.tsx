@@ -1,11 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { 
-  EnvelopeIcon,
-  UserIcon,
-  ChatBubbleLeftRightIcon
-} from "@heroicons/react/24/outline";
+import { EnvelopeIcon } from "@heroicons/react/24/outline";
 
 export default function Contact() {
   const [formData, setFormData] = useState({

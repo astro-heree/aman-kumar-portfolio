@@ -1,10 +1,8 @@
 import { 
   AcademicCapIcon,
   TrophyIcon,
-  CodeBracketIcon,
   SparklesIcon,
   RocketLaunchIcon,
-  HeartIcon,
   ChartBarIcon,
   LightBulbIcon
 } from "@heroicons/react/24/outline";
