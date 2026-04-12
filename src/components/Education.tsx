@@ -7,7 +7,7 @@ export default function Education() {
     {
       degree: "Bachelor of Technology in Computer Science",
       institution: "Vellore Institute of Technology",
-      duration: "2020 — 2024",
+      duration: "2020 — Jul 2024",
       cgpa: "8.97/10",
       type: "BTech",
       color: "from-blue-500 to-purple-600"

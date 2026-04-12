@@ -30,14 +30,14 @@ export default function About() {
                 </div>
                 <p className="text-sm sm:text-base text-slate-300 mb-3 sm:mb-4 leading-relaxed">
                   My journey in software engineering began with a curiosity for problem-solving and has evolved into a passion for building 
-                  <span className="text-blue-400 font-semibold"> AI-powered solutions</span> that make a real impact. Currently working as a 
-                  <span className="text-green-400 font-semibold"> Software Engineer at Iksha Labs</span>, I&apos;ve been at the forefront of 
-                  developing cutting-edge conversational AI systems.
+                  <span className="text-blue-400 font-semibold"> AI-powered and healthcare interoperability solutions</span> that make a real impact. 
+                  I&apos;m currently a <span className="text-green-400 font-semibold"> Software Development Engineer at Innovaccer</span>, working on 
+                  prior authorization and clinical data workflows for US healthcare providers.
                 </p>
                 <p className="text-sm sm:text-base text-slate-300 mb-4 sm:mb-6 leading-relaxed">
-                  From building comprehensive interview platforms during my internship to now architecting 
-                  <span className="text-purple-400 font-semibold"> microservice-based AI call agent platforms</span> supporting multiple languages, 
-                  I focus on creating solutions that bridge complex technology with user-friendly experiences. What drives me is the intersection of 
+                  Previously at <span className="text-purple-400 font-semibold">Iksha Labs</span>, I helped build 
+                  <span className="text-purple-400 font-semibold"> microservice-based AI call agent platforms</span> in Hindi and English—from an internship 
+                  on AI interview tooling to full-time work on voice pipelines and automation. What drives me is the intersection of 
                   <span className="text-yellow-400 font-semibold"> artificial intelligence</span>, 
                   <span className="text-pink-400 font-semibold"> scalable architecture</span>, and 
                   <span className="text-cyan-400 font-semibold"> performance optimization</span>.
@@ -62,7 +62,7 @@ export default function About() {
                     <RocketLaunchIcon className="w-5 h-5 sm:w-6 sm:h-6 text-purple-400 mt-1 flex-shrink-0" />
                     <div className="min-w-0 flex-1">
                       <h4 className="font-semibold text-white mb-1 text-sm sm:text-base">Scalable Innovation</h4>
-                      <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">Building systems that grow - from 50+ REST APIs to multi-repository architectures</p>
+                      <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">Building systems that grow—from microservices and FHIR-scale data to multilingual AI platforms</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-2 sm:gap-3">
@@ -90,7 +90,7 @@ export default function About() {
                     <div className="ml-5 sm:ml-6">
                       <h4 className="font-semibold text-white text-base sm:text-lg">BTech in Computer Science</h4>
                       <p className="text-blue-400 font-medium text-sm sm:text-base">Vellore Institute of Technology</p>
-                      <p className="text-slate-300 text-xs sm:text-sm mb-2">2020 - 2024</p>
+                      <p className="text-slate-300 text-xs sm:text-sm mb-2">2020 — Jul 2024</p>
                       <div className="flex items-center gap-2">
                         <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
                           CGPA: 8.97/10.00
@@ -119,7 +119,7 @@ export default function About() {
                     <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
                     <div className="min-w-0 flex-1">
                       <h4 className="font-semibold text-white text-sm sm:text-base">LeetCode Expert</h4>
-                      <p className="text-slate-300 text-xs sm:text-sm">Rating: 1725 | 100+ days coding streak</p>
+                      <p className="text-slate-300 text-xs sm:text-sm">Rating: 1725 | 100-day coding challenge</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-2 sm:gap-3 p-2.5 sm:p-3 bg-slate-800/30 rounded-lg hover:bg-slate-800/50 transition-colors">

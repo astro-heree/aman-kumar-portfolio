@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import { SiMongodb } from 'react-icons/si';
+import { CircleStackIcon, GlobeAltIcon } from '@heroicons/react/24/solid';
 
 // Import all the technology icons
 import JavaScriptIcon from '../icons/javascript-1.svg';
@@ -97,6 +99,13 @@ export default function Skills() {
                   </div>
                   <p className="text-slate-300 font-medium text-xs sm:text-sm md:text-base">Bootstrap</p>
                 </div>
+                {/* REST APIs */}
+                <div className="group text-center">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 tech-icon-card flex items-center justify-center mx-auto mb-2 sm:mb-3 md:mb-4">
+                    <GlobeAltIcon className="w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 text-sky-400" aria-hidden />
+                  </div>
+                  <p className="text-slate-300 font-medium text-xs sm:text-sm md:text-base">REST APIs</p>
+                </div>
                 {/* 9. HTML5 */}
                 <div className="group text-center">
                   <div className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 tech-icon-card flex items-center justify-center mx-auto mb-2 sm:mb-3 md:mb-4">
@@ -168,6 +177,18 @@ export default function Skills() {
                   </div>
                   <p className="text-slate-300 font-medium text-xs sm:text-sm md:text-base">LiveKit</p>
                 </div>
+                <div className="group text-center">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 tech-icon-card flex items-center justify-center mx-auto mb-2 sm:mb-3 md:mb-4 text-[#47A248]">
+                    <SiMongodb className="w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12" aria-hidden />
+                  </div>
+                  <p className="text-slate-300 font-medium text-xs sm:text-sm md:text-base">MongoDB</p>
+                </div>
+                <div className="group text-center">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 tech-icon-card flex items-center justify-center mx-auto mb-2 sm:mb-3 md:mb-4">
+                    <CircleStackIcon className="w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 text-cyan-400" aria-hidden />
+                  </div>
+                  <p className="text-slate-300 font-medium text-xs sm:text-sm md:text-base">SQL</p>
+                </div>
               </div>
             </div>
 
@@ -212,6 +233,33 @@ export default function Skills() {
                   </div>
                   <p className="text-slate-300 font-medium text-xs sm:text-sm md:text-base">Ruby</p>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Concepts — aligned with resume */}
+          <div className="mt-6 sm:mt-8 md:mt-12">
+            <div className="glow-card">
+              <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+                <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-violet-500 rounded-lg flex items-center justify-center">
+                  <svg className="w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                </div>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-white">Concepts</h3>
+              </div>
+              <p className="text-slate-400 text-sm sm:text-base mb-4">
+                Data structures, algorithms, object-oriented programming, low-level design, design patterns, design principles, operating systems, database systems, and the C++ standard library (STL).
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {['Data structures', 'Algorithms', 'OOP', 'Low-level design', 'Design patterns', 'Design principles', 'Operating systems', 'DBMS', 'STL'].map((label) => (
+                  <span
+                    key={label}
+                    className="px-3 py-1.5 bg-slate-700/50 text-slate-300 text-xs sm:text-sm rounded-full border border-slate-600/50"
+                  >
+                    {label}
+                  </span>
+                ))}
               </div>
             </div>
           </div>

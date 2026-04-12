@@ -50,7 +50,7 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-blue-400">Aman Kumar</h3>
             <p className="text-slate-400 leading-relaxed max-w-sm">
-              Software Engineer passionate about creating innovative AI solutions, 
+              Software Development Engineer passionate about healthcare interoperability, AI solutions, 
               scalable microservices, and user-friendly applications that solve real-world problems.
             </p>
           </div>
@@ -97,7 +97,7 @@ export default function Footer() {
         <div className="container-max section-padding py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-500 text-sm">
-              © 2025 Aman Kumar. All rights reserved.
+              © 2026 Aman Kumar. All rights reserved.
             </p>
             <p className="text-slate-500 text-sm">
               Designed & Built with{" "}

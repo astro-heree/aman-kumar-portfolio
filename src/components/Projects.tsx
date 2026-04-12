@@ -43,8 +43,8 @@ export default function Projects() {
 
                     {/* Description */}
                     <p className="text-slate-300 text-lg leading-relaxed">
-                      A sophisticated real-time collaborative code editor that enables multiple developers to write, edit, and debug code simultaneously. 
-                      Built with modern web technologies to provide seamless pair programming and team coding experiences with integrated communication features.
+                      A real-time collaborative code editor with Socket.io sync across four languages, plus LiveKit for audio and video. 
+                      Built with React.js, Express.js, and WebRTC-style streaming so teams can pair program with lower latency and faster session joins.
                     </p>
 
                     {/* Key Features */}
@@ -58,8 +58,8 @@ export default function Projects() {
                           <div className="flex items-start gap-3">
                             <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
                             <div>
-                              <p className="text-white font-medium">Multi-language Support</p>
-                              <p className="text-slate-400 text-sm">JavaScript, Python, Java, C++</p>
+                              <p className="text-white font-medium">Multi-language &amp; real-time sync</p>
+                              <p className="text-slate-400 text-sm">Four languages with Socket.io; ~30% lower latency, ~25% faster session joins</p>
                             </div>
                           </div>
                           <div className="flex items-start gap-3">
@@ -81,8 +81,8 @@ export default function Projects() {
                           <div className="flex items-start gap-3">
                             <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
                             <div>
-                              <p className="text-white font-medium">Integrated Communication</p>
-                              <p className="text-slate-400 text-sm">Voice, video, and text chat</p>
+                              <p className="text-white font-medium">LiveKit A/V</p>
+                              <p className="text-slate-400 text-sm">WebRTC streaming; ~35% faster collaborative debugging vs baseline</p>
                             </div>
                           </div>
                           <div className="flex items-start gap-3">
@@ -145,26 +145,26 @@ export default function Projects() {
                       <div className="space-y-4">
                         <div className="flex items-center justify-between p-4 bg-slate-800/40 rounded-xl border border-slate-700/30">
                           <div>
-                            <p className="text-white font-semibold">Concurrent Users</p>
-                            <p className="text-slate-400 text-sm">Maximum supported per session</p>
+                            <p className="text-white font-semibold">Sync latency</p>
+                            <p className="text-slate-400 text-sm">Socket.io real-time collaboration</p>
                           </div>
-                          <div className="text-2xl font-bold text-blue-400">10+</div>
+                          <div className="text-2xl font-bold text-green-400">~30%</div>
                         </div>
                         
                         <div className="flex items-center justify-between p-4 bg-slate-800/40 rounded-xl border border-slate-700/30">
                           <div>
-                            <p className="text-white font-semibold">Real-time Latency</p>
-                            <p className="text-slate-400 text-sm">Average synchronization delay</p>
+                            <p className="text-white font-semibold">Session join time</p>
+                            <p className="text-slate-400 text-sm">Faster onboarding into editor sessions</p>
                           </div>
-                          <div className="text-2xl font-bold text-green-400">&lt;100ms</div>
+                          <div className="text-2xl font-bold text-blue-400">~25%</div>
                         </div>
                         
                         <div className="flex items-center justify-between p-4 bg-slate-800/40 rounded-xl border border-slate-700/30">
                           <div>
-                            <p className="text-white font-semibold">Code Languages</p>
-                            <p className="text-slate-400 text-sm">Supported programming languages</p>
+                            <p className="text-white font-semibold">Collaborative debugging</p>
+                            <p className="text-slate-400 text-sm">LiveKit audio/video vs baseline</p>
                           </div>
-                          <div className="text-2xl font-bold text-yellow-400">4</div>
+                          <div className="text-2xl font-bold text-yellow-400">~35%</div>
                         </div>
                       </div>
                     </div>
@@ -221,7 +221,7 @@ export default function Projects() {
                 {/* Mobile Description */}
                 <div className="mb-4 sm:mb-6">
                   <p className="text-slate-300 text-sm sm:text-base leading-relaxed text-center px-1">
-                    A sophisticated real-time collaborative code editor that enables multiple developers to write, edit, and debug code simultaneously. Built with modern web technologies to provide seamless pair programming and team coding experiences.
+                    Real-time collaborative editor with Socket.io across four languages and LiveKit for A/V—focused on lower latency, faster session joins, and smoother collaborative debugging.
                   </p>
                 </div>
 
@@ -238,26 +238,26 @@ export default function Projects() {
                   <div className="space-y-2 sm:space-y-3">
                     <div className="flex items-center justify-between p-2.5 sm:p-3 bg-slate-800/40 rounded-lg sm:rounded-xl border border-slate-700/30">
                       <div className="min-w-0 flex-1">
-                        <p className="text-white font-medium text-xs sm:text-sm">Concurrent Users</p>
-                        <p className="text-slate-400 text-xs">Maximum supported per session</p>
+                        <p className="text-white font-medium text-xs sm:text-sm">Sync latency</p>
+                        <p className="text-slate-400 text-xs">Socket.io collaboration</p>
                       </div>
-                      <div className="text-lg sm:text-xl font-bold text-blue-400 ml-2">10+</div>
+                      <div className="text-lg sm:text-xl font-bold text-green-400 ml-2">~30%</div>
                     </div>
                     
                     <div className="flex items-center justify-between p-2.5 sm:p-3 bg-slate-800/40 rounded-lg sm:rounded-xl border border-slate-700/30">
                       <div className="min-w-0 flex-1">
-                        <p className="text-white font-medium text-xs sm:text-sm">Real-time Latency</p>
-                        <p className="text-slate-400 text-xs">Average synchronization delay</p>
+                        <p className="text-white font-medium text-xs sm:text-sm">Session join time</p>
+                        <p className="text-slate-400 text-xs">Faster session onboarding</p>
                       </div>
-                      <div className="text-lg sm:text-xl font-bold text-green-400 ml-2">&lt;100ms</div>
+                      <div className="text-lg sm:text-xl font-bold text-blue-400 ml-2">~25%</div>
                     </div>
                     
                     <div className="flex items-center justify-between p-2.5 sm:p-3 bg-slate-800/40 rounded-lg sm:rounded-xl border border-slate-700/30">
                       <div className="min-w-0 flex-1">
-                        <p className="text-white font-medium text-xs sm:text-sm">Code Languages</p>
-                        <p className="text-slate-400 text-xs">Supported programming languages</p>
+                        <p className="text-white font-medium text-xs sm:text-sm">Collaborative debugging</p>
+                        <p className="text-slate-400 text-xs">LiveKit A/V vs baseline</p>
                       </div>
-                      <div className="text-lg sm:text-xl font-bold text-yellow-400 ml-2">4</div>
+                      <div className="text-lg sm:text-xl font-bold text-yellow-400 ml-2">~35%</div>
                     </div>
                   </div>
                 </div>
@@ -272,8 +272,8 @@ export default function Projects() {
                     <div className="flex items-start gap-2 sm:gap-3 p-2 sm:p-3 bg-slate-800/30 rounded-lg">
                       <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-blue-400 rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
                       <div className="min-w-0 flex-1">
-                        <p className="text-white font-medium text-xs sm:text-sm">Multi-language Support</p>
-                        <p className="text-slate-400 text-xs">JavaScript, Python, Java, C++</p>
+                        <p className="text-white font-medium text-xs sm:text-sm">Multi-language &amp; real-time sync</p>
+                        <p className="text-slate-400 text-xs">Four languages; ~30% / ~25% improvements</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-2 sm:gap-3 p-2 sm:p-3 bg-slate-800/30 rounded-lg">
@@ -293,8 +293,8 @@ export default function Projects() {
                     <div className="flex items-start gap-2 sm:gap-3 p-2 sm:p-3 bg-slate-800/30 rounded-lg">
                       <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-yellow-400 rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
                       <div className="min-w-0 flex-1">
-                        <p className="text-white font-medium text-xs sm:text-sm">Integrated Communication</p>
-                        <p className="text-slate-400 text-xs">Voice, video, and text chat</p>
+                        <p className="text-white font-medium text-xs sm:text-sm">LiveKit A/V</p>
+                        <p className="text-slate-400 text-xs">~35% faster collaborative debugging</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-2 sm:gap-3 p-2 sm:p-3 bg-slate-800/30 rounded-lg">

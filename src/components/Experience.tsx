@@ -9,21 +9,35 @@ import {
 export default function Experience() {
   const experiences = [
     {
+      title: "Software Development Engineer",
+      company: "Innovaccer",
+      location: "Noida, Uttar Pradesh",
+      duration: "September 2025 - Present",
+      type: "Full-time",
+      description: "Building prior authorization and clinical interoperability solutions for US healthcare providers.",
+      achievements: [
+        "Engineered a Prior Authorization platform for US healthcare providers, integrating CDS Hooks for EHR-triggered workflows, Availity APIs for eligibility verification, and a CQL-based policy engine for clinical guideline evaluation.",
+        "Contributed to an AI-assisted evaluation pipeline using CQL decision trees and QnA-based agents to assess prior authorization requests, improving decision consistency across automated and manual workflows.",
+        "Designed a graph-based FHIR R4 traversal system for prior authorization packets exceeding 30,000 lines, using path-pattern matching to extract clinical documents and supporting data for automated policy evaluation.",
+        "Built a configuration management microservice and reusable Python package (py-config-manager) with automated CI/CD, enabling scalable multi-tenant architecture across multiple microservices and customers."
+      ],
+      technologies: ["Python", "FHIR R4", "CQL", "CDS Hooks", "REST APIs", "Microservices", "CI/CD"]
+    },
+    {
       title: "Software Engineer",
       company: "Iksha Labs Private Limited",
       location: "Gurugram, Haryana",
-      duration: "August 2024 - Present",
+      duration: "August 2024 - September 2025",
       type: "Full-time",
-      description: "Working on cutting-edge AI solutions and microservice architectures for automated customer service platforms.",
+      description: "Worked on cutting-edge AI solutions and microservice architectures for automated customer service platforms.",
       achievements: [
         "Developed microservice-based AI call agent platform supporting Hindi and English languages, automating customer requirement gathering and reducing manual call handling by 80%.",
-        "Architected multi-repository system using Python, FastAPI, and Pydantic validation, enabling concurrent call processing across distributed services.",
         "Optimized speech-to-text and text-to-speech pipeline by benchmarking Deepgram, Amazon Polly, OpenAI, and Grok APIs, achieving 35% faster processing and 40% improved audio quality.",
         "Designed PostgreSQL database schema with optimized queries for bilingual call processing, improving response times by 70%.",
         "Extended Activepieces open-source automation tool with custom code contributions for post-call workflows, reducing development time by 95% and cutting SaaS costs.",
         "Created multilingual AI prompt engineering systems (500+ lines) for healthcare, sales, and loan recovery use cases, reducing call handling time by 40%."
       ],
-      technologies: ["Python", "FastAPI", "PostgreSQL", "Pydantic", "Deepgram", "OpenAI", "Grok APIs", "Amazon Polly"]
+      technologies: ["Python", "FastAPI", "PostgreSQL", "Deepgram", "OpenAI", "Grok APIs", "Amazon Polly"]
     },
     {
       title: "Software Engineer Intern",
@@ -34,10 +48,8 @@ export default function Experience() {
       description: "Built AI-powered interview platforms and scalable backend systems with focus on performance optimization.",
       achievements: [
         "Built AI Interview Platform automating candidate assessment processes, reducing interviewer workload by 60% and improving assessment accuracy by 30%.",
-        "Migrated AWS S3 upload architecture from presigned URLs to multipart uploads, decreasing upload failure rate from 40% to under 5%.",
-        "Implemented queue-based upload system ensuring 99% upload success rate despite network interruptions, significantly improving user retention.",
-        "Developed real-time microphone monitoring system using custom React hooks, reducing help requests by 80% and enabling independent interview completion.",
-        "Built 50+ REST APIs using Flask for backend data processing and integrated 80+ frontend APIs with Redux for state management."
+        "Redesigned video upload architecture using AWS S3 multipart uploads and queue-based retry logic, reducing failure rate from 40% to under 5% and achieving 99% upload success under unstable network conditions.",
+        "Developed real-time microphone monitoring system using custom React hooks, reducing help requests by 80% and enabling independent interview completion."
       ],
       technologies: ["React", "Redux", "Flask", "AWS S3", "Python", "REST APIs", "JavaScript", "Custom React Hooks"]
     }

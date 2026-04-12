@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 
 const roles = [
+  "Software Development Engineer",
   "Web Developer",
   "Problem Solver", 
   "Frontend Developer",
@@ -108,9 +109,9 @@ export default function Hero() {
         {/* Enhanced Description */}
         <div className="mb-12 sm:mb-16 animate-fade-in-up animation-delay-1000">
           <p className="text-sm sm:text-lg md:text-xl text-slate-400 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed font-light">
-            Specialized in AI-powered platforms, microservices architecture, and 
-            enterprise developer tools. Experienced in building scalable, maintainable 
-            systems with a focus on performance and reliability.
+            Specialized in healthcare interoperability and prior authorization, AI-powered platforms, 
+            and microservices. Experienced in building scalable, maintainable systems with a focus on 
+            performance and reliability.
           </p>
           
           {/* Philosophy Banner */}
