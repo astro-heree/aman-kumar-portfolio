@@ -63,7 +63,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 px-3 sm:px-6 pt-20 overflow-hidden">
+    <section id="hero" className="min-h-screen flex flex-col items-center justify-center relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 px-3 sm:px-6 pt-20 overflow-hidden">
       {/* Animated Background Elements - Smaller on mobile */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-4 -left-4 w-32 h-32 sm:w-72 sm:h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>

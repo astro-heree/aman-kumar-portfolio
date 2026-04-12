@@ -1,18 +1,34 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export const metadata: Metadata = {
-  title: "Aman Kumar - Software Engineer",
-  description: "Portfolio of Aman Kumar, Software Engineer at Iksha Labs specializing in AI platforms, full-stack development, and microservices architecture.",
-  keywords: ["Software Engineer", "Full Stack Developer", "React", "Python", "AI", "Machine Learning"],
+  title: "Aman Kumar - Software Development Engineer",
+  description:
+    "Portfolio of Aman Kumar, Software Development Engineer at Innovaccer. Healthcare interoperability, prior authorization, AI platforms, and full-stack development.",
+  keywords: [
+    "Software Development Engineer",
+    "Full Stack Developer",
+    "React",
+    "Python",
+    "FHIR",
+    "Healthcare IT",
+    "AI",
+    "Microservices",
+  ],
   authors: [{ name: "Aman Kumar" }],
-  viewport: "width=device-width, initial-scale=1.0, maximum-scale=5.0",
   openGraph: {
-    title: "Aman Kumar - Software Engineer",
-    description: "Portfolio of Aman Kumar, Software Engineer specializing in AI platforms and full-stack development.",
+    title: "Aman Kumar - Software Development Engineer",
+    description:
+      "Software Development Engineer specializing in healthcare interoperability, AI platforms, and full-stack development.",
     type: "website",
   },
 };
@@ -24,9 +40,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-      </head>
       <body className={`${inter.className} antialiased`}>
         {children}
       </body>
