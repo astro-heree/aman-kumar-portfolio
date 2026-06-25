@@ -12,7 +12,7 @@ export default function Experience() {
       title: "Software Development Engineer",
       company: "Innovaccer",
       location: "Noida, Uttar Pradesh",
-      duration: "September 2025 - Present",
+      duration: "September 2025 - May 2026",
       type: "Full-time",
       description: "Building prior authorization and clinical interoperability solutions for US healthcare providers.",
       achievements: [

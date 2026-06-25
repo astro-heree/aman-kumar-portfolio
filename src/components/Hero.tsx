@@ -152,6 +152,20 @@ export default function Hero() {
             <span className="relative z-10">Contact Me</span>
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </Link>
+          <a
+            href="https://drive.google.com/uc?export=download&id=1A3z_LpZoESIF-rQI6t9n5VmnxWWdPFWS"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group bg-slate-800/70 hover:bg-slate-700/80 text-blue-300 hover:text-white px-6 sm:px-10 py-3 sm:py-4 rounded-full text-sm sm:text-lg font-medium transition-all duration-300 transform hover:scale-105 border-2 border-blue-500/50 hover:border-blue-400 shadow-lg hover:shadow-blue-500/20 relative overflow-hidden"
+          >
+            <span className="relative z-10 flex items-center justify-center gap-2">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v12m0 0l4-4m-4 4l-4-4m-5 7h18" />
+              </svg>
+              Download Resume
+            </span>
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </a>
         </div>
 
         {/* Enhanced Social Icons */}
