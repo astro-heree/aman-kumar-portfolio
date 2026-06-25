@@ -9,17 +9,17 @@ import {
 export default function Experience() {
   const experiences = [
     {
-      title: "Software Development Engineer",
+      title: "Software Development Engineer 1",
       company: "Innovaccer",
       location: "Noida, Uttar Pradesh",
       duration: "September 2025 - May 2026",
       type: "Full-time",
       description: "Building prior authorization and clinical interoperability solutions for US healthcare providers.",
       achievements: [
-        "Engineered a Prior Authorization platform for US healthcare providers, integrating CDS Hooks for EHR-triggered workflows, Availity APIs for eligibility verification, and a CQL-based policy engine for clinical guideline evaluation.",
-        "Contributed to an AI-assisted evaluation pipeline using CQL decision trees and QnA-based agents to assess prior authorization requests, improving decision consistency across automated and manual workflows.",
+        "Engineered a Prior Authorization platform, integrating CDS Hooks and Availity APIs for eligibility and approval workflows for US healthcare providers.",
+        "Implemented an AI-assisted evaluation pipeline using CQL decision trees and QnA-based agents to assess prior authorization requests, improving decision consistency across automated and manual workflows.",
         "Designed a graph-based FHIR R4 traversal system for prior authorization packets exceeding 30,000 lines, using path-pattern matching to extract clinical documents and supporting data for automated policy evaluation.",
-        "Built a configuration management microservice and reusable Python package (py-config-manager) with automated CI/CD, enabling scalable multi-tenant architecture across multiple microservices and customers."
+        "Built a configuration management microservice and reusable Python package (py-config-manager), published to an internal PyPI registry with automated CI/CD, enabling scalable multi-tenant architecture across microservices."
       ],
       technologies: ["Python", "FHIR R4", "CQL", "CDS Hooks", "REST APIs", "Microservices", "CI/CD"]
     },
